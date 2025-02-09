@@ -1,11 +1,11 @@
 let colorBox = document.querySelector('[data-testid="colorBox"]')
-let numbers = "01234";
+let numbers = "123456";
 let colorOption = document.querySelector('[data-testid="colorOption"]')
 let selectedColor;
 let scoreResult = document.querySelector('[data-testid="score"]')
 let score = 0
 let gameStatus = document.querySelector('[data-testid="gameStatus"]')
-let color = ["red", "green", "yellow", "orange", "purple"]
+let color = ["red", "green", "yellow", "orange", "purple", "blue"]
 
 
 
@@ -24,7 +24,9 @@ function pickedColor(){
         case "4":
             targetColor = "orange";
             break;
-    
+      case "5":
+           targetColor = "blue";
+           break;
         default:
             targetColor = "purple"
             break;
